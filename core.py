@@ -10,10 +10,11 @@ for cogs in os.listdir("cogs"):
         print(f"cogs.{cogs[:-3]}을 성공적으로 로드했어요!")
 @bot.event
 async def on_ready():
-    print(f"loggin {bot.user.name}")
+    print(f'{bot.user.name} 에 성공적으로 로그인했어요')
+    print(f'봇의 ID는 다음과 같아요 "{bot.user.id}"')
     date = datetime.now()
     while(True):        
-        await bot.change_presence(activity = discord.Streaming(name = "gt.도움", url= "https://www.twitch.tv/bookguk_gom")) #디스코드 rich presence
+        await bot.change_presence(activity = discord.Streaming(name = "곰탱쓰 도움", url= "https://www.twitch.tv/bookguk_gom"))
         await asyncio.sleep(5)
         await bot.change_presence(activity = discord.Streaming(name = f"ver. BATA {date.year}. {date.month}. {date.day}. ", url= "https://www.twitch.tv/bookguk_gom"))
         await asyncio.sleep(5)
