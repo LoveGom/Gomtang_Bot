@@ -2,7 +2,7 @@ import discord, asyncio, os
 from discord.ext import commands
 from datetime import datetime
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="곰탱쓰 ", intents=discord.Intents.all())
 
 for cogs in os.listdir("cogs"):
     if cogs.endswith(".py"):
@@ -20,5 +20,5 @@ async def on_ready():
 
 
 
-
-bot.run("ODUxNzI5NzQ2MzMzNDAxMTQ5.YL8hIw.fgg_2EvE7yXYGQPf0iAAPsS5AQI")
+def startup(token):
+    bot.run(token)
