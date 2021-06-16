@@ -23,3 +23,4 @@ async def on_ready():
 
 def startup(token):
     bot.run(token)
+#bot.run("token")
