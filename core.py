@@ -22,5 +22,6 @@ async def on_ready():
 
 
 def startup(token):
+    print(token)
     bot.run(token)
 #bot.run("token")

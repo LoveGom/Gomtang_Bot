@@ -11,7 +11,7 @@ class base(commands.Cog):
     async def pingcmd(self, ctx):
         #await ctx.reply("Pong")
         await ctx.reply(f"Pong! {round(self.bot.latency * 1000)}ms")
-    @commands.command(name="도움", aliases=["도움말", "헬픈"])
+    @commands.command(name="도움", aliases=["도움말", "헬프"])
     async def helpembed(self, ctx):
         embedVar = discord.Embed(title="도움말", description="명령어는 아래에서 확인하세요!", color=0x00ff00) #embed 초기 설정을 합니다
         embedVar.add_field(name=f"곰탱쓰 지연시간", value="네트워크 지연시간을 표기합니다.", inline=False)

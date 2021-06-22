@@ -7,7 +7,7 @@ class base(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="급식", help="군산 제일 고등학교의 급식을 표시합니다.")
+    @commands.command(name="급식", help="군산 제일 고등학교의 급식을 표시합니다.", aliases=["밥"])
     #@commands.command()
     # aliases=["cmd1", "cmd2"]
     async def showlaunch(self, ctx):
@@ -27,6 +27,6 @@ class base(commands.Cog):
                 replace2 = replace1.replace("(정)","")
                 replace3 = replace2.replace(".","")
                 replace4 = "".join(no_num.findall(replace3))
-                await ctx.send(replace4)
+                await ctx.send(replace4[4:])
 def setup(bot):
     bot.add_cog(base(bot))
