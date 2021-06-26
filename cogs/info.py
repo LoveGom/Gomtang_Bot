@@ -1,4 +1,4 @@
-import discord, re, requests, pybithumb, psutil
+import discord, re, requests, psutil
 from discord.ext import commands
 class base(commands.Cog):
     def __init__(self, bot):
