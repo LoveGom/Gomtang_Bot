@@ -5,7 +5,7 @@ class base(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="이모티콘", help="현재 주요 가상화폐의 시세를 확인합니다.", aliases=["임", "임티"])
+    @commands.command(name="emote", help="케인인님의 임티를 보낸다맨이야!", aliases=["임", "임티"])
     async def emote(self, ctx, *, emote):
         if emote == "뭉탱이":
             await ctx.message.delete()
@@ -19,7 +19,7 @@ class base(commands.Cog):
             await ctx.message.delete()
             await ctx.send("https://media.tenor.com/images/a9ca502195c292a122b0475c3ed48154/tenor.gif")
         else:
-            await ctx.send("그딴 임티 없음")
+            await ctx.send("얘! 그런 임티는 없단다!")
         
 
 def setup(bot):
