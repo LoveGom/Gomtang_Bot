@@ -4,8 +4,8 @@ class base(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="emote", help="케인인님의 임티를 보낸다맨이야!", aliases=["임", "임티"])
-    async def emote(self, ctx, *, emote):
+    @commands.command(name="voice", help="voice chat", aliases=["음", "음챗"])
+    async def voice(self, ctx):
         pass
 
 def setup(bot):
